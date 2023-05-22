@@ -1,0 +1,43 @@
+Constructor:
+
+A constructor is a special method in a Java class that is used to initialize objects of that class.
+Constructors have the same name as the class and do not have a return type (not even void).
+Constructors are called automatically when an object is created using the new keyword.
+The primary purpose of a constructor is to set initial values for the instance variables of an object.
+Constructors can be overloaded, which means you can have multiple constructors with different parameter lists.
+Constructors are typically used to perform initialization tasks and set up the initial state of an object.
+Here's an example of a constructor:
+
+java
+Copy code
+public class Car {
+    private String model;
+    private String color;
+
+    public Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+    }
+}
+In this example, the Car class has a constructor that takes two parameters: model and color. When a new Car object is created, the constructor is automatically called to initialize the model and color instance variables.
+
+Method:
+
+A method in Java is a block of code that performs a specific task or action when called.
+Methods have a name, a return type (or void if they don't return a value), and can accept zero or more parameters.
+Methods are explicitly called by name, either on objects (instance methods) or on the class itself (static methods).
+Methods can have any number of statements, perform calculations, manipulate data, or execute specific operations.
+Methods can be overloaded, which means you can have multiple methods with the same name but different parameter lists.
+Methods are typically used to encapsulate functionality, organize code into reusable units, and provide a way to interact with objects.
+Here's an example of a method:
+
+java
+Copy code
+public class Calculator {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}
+In this example, the Calculator class has a static method called add that takes two integer parameters a and b. The method performs the addition operation and returns the result.
+
+To summarize, constructors are special methods used for object initialization, whereas methods are blocks of code that perform specific tasks or actions. Constructors are called automatically when objects are created, while methods are explicitly called. Constructors have the same name as the class and don't have a return type, while methods have a return type (or void) and can accept parameters.
