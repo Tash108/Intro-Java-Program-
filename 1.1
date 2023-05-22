@@ -1,0 +1,32 @@
+Question 1.1 Answer- Counter-Controlled Loop (for loop):
+
+In Java, a counter-controlled loop is typically implemented using a for loop. The loop iterates a specific number of times based on a counter variable. Here's an example:
+
+java
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteration " + i);
+}
+In this example, the loop will execute five times because the counter variable i is initialized to 1, and the loop continues as long as i is less than or equal to 5. The counter i is incremented by 1 in each iteration using the i++ statement.
+
+Sentinel-Controlled Loop (while loop):
+
+In Java, a sentinel-controlled loop is typically implemented using a while loop. The loop continues until a sentinel value is encountered. Here's an example:
+
+
+import java.util.Scanner;
+
+int num;
+Scanner scanner = new Scanner(System.in);
+
+while (true) {
+    System.out.print("Enter a number (or 0 to exit): ");
+    num = scanner.nextInt();
+    if (num == 0) {
+        break;
+    }
+    System.out.println("You entered: " + num);
+}
+In this example, the loop continues indefinitely (while (true)) until the user enters 0. Inside the loop, the user is prompted to enter a number, which is stored in the num variable. If the value of num is 0, the break statement is used to exit the loop. Otherwise, the entered number is displayed.
+
+Counter-controlled loops are used when you know the exact number of iterations needed, while sentinel-controlled loops are used when the loop termination depends on a specific condition or sentinel value.
