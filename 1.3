@@ -1,0 +1,32 @@
+In Java, System.out.print and System.out.println are both methods provided by the System.out object to output text to the console. Here's a simple distinction between the two:
+
+System.out.print:
+
+The System.out.print method is used to print text or values to the console without inserting a new line character at the end.
+It outputs the provided text or value as-is, without any additional formatting.
+If you use multiple System.out.print statements consecutively, the output will be concatenated without any line breaks.
+Here's an example:
+java
+Copy code
+System.out.print("Hello, ");
+System.out.print("world!");
+Output:
+
+Copy code
+Hello, world!
+System.out.println:
+
+The System.out.println method is used to print text or values to the console with an appended new line character at the end.
+It outputs the provided text or value and adds a line break after it.
+If you use multiple System.out.println statements consecutively, each statement will be printed on a new line.
+Here's an example:
+java
+Copy code
+System.out.println("Hello");
+System.out.println("world!");
+Output:
+
+Copy code
+Hello
+world!
+The main distinction is that System.out.print prints the text or value without a line break, while System.out.println prints the text or value with a line break appended. The choice between them depends on whether you want the output to be on the same line or separate lines.
