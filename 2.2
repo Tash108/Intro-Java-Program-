@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Square{
+  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int counter;
+		int total;
+		int n;
+		counter=0;
+		total=0;
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an number n : ");
+        n = scanner.nextInt();
+		for(int i=0;i<n;i++) {// nested for loops used
+			for (int j=0;j<n;j++) {// print the number stars in one line
+				System.out.print(" * ");// spaces to get neatly formated sqaure
+			}
+			System.out.println("");//go to the next line
+		}
+	}
+
+}
