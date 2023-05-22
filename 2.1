@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class PrintSum {
+  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int counter;
+		int total;
+		int n;
+		counter=0;//initialise to 0
+		total=0;//initialise to 0
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an number n: ");
+        n = scanner.nextInt();//get user input
+		while (counter<=n) {
+			total=total+(n-counter);//add numbers
+			counter+=1;
+		}
+		System.out.print("Sum of numbers from 0 to n is :"+total);//print total
+		
+	}
